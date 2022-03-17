@@ -238,3 +238,13 @@ Thu Mar 17 15:15:45 -03 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 2252b94
+Thu Mar 17 15:17:36 -03 2022: 
+ list.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+./list.c:82:5: error: void function 'pushFront' should not return a value [-Wreturn-type]
+    return NULL;
+    ^      ~~~~
+1 error generated.
+Compilation failed
+ee070f3
