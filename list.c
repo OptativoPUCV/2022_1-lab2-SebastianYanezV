@@ -40,10 +40,10 @@ List * createList()
 
 void * firstList(List * list) 
 {
-    //if(list->head == NULL) return NULL;
-    //list->current = list->head;
-    return NULL;
-    //return (list->head->data);
+    if(list->head == NULL) return NULL;
+    list->current = list->head;
+
+    return (list->head->data);
 }
 
 void * nextList(List * list) 
@@ -56,9 +56,8 @@ void * nextList(List * list)
 
 void * lastList(List * list) 
 {
-    return NULL;
-    //list->current = list->tail;
-    //return (list->tail->data);
+    list->current = list->tail;
+    return (list->tail->data);
 }
 
 void * prevList(List * list) 
