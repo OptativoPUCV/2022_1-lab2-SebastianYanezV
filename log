@@ -111,3 +111,9 @@ Thu Mar 17 14:06:02 -03 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 57431d3
+Thu Mar 17 14:07:37 -03 2022: 
+ list.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+ tests:  3|5
+total_score: 15/70
+27db2d3
