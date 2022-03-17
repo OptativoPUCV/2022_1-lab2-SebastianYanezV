@@ -49,7 +49,7 @@ void * nextList(List * list)
 {
     List *dato = list->current->next->data;
 
-    //if(list->current->next == NULL) return NULL;
+    if(list->current->next == NULL) return NULL;
     //list->current = list->current->next;
 
     return dato;
