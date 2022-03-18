@@ -97,27 +97,35 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) 
 {
+    Node *nuevoNodo = createNode(data);
+
     if (list->head == NULL)
     {
+        list->current = nuevoNodo;
         list->current = list->head;
         list->current = list->tail;
         list->head = list->current;
         list->tail = list->current;
-        list->current->next = NULL;
+        //list->current->next = NULL;
     }
     else
     {
-        if (list->head->next == NULL)
+        if (list->current->next == NULL)
         {
-            list->head->next = list->current->prev;
-            list->current->next = NULL;
+            list->current = nuevoNodo;
+            nuevoNodo = list->tail;
+            nuevoNodo->prev = list->current;
+            list->current->next = nuevoNodo;
+            nuevoNodo->next = NULL;
+            /*list->head->next = list->current->prev;
+            list->current->next = NULL;*/
         }
-        else
+        /*else
         {
             list->head->next = list->current->prev;
             list->current->next = list->current->next->prev;
             list->current->next->next = NULL;
-        }
+        }*/
     }
 }
 
