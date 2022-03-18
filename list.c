@@ -100,8 +100,24 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) 
 {
-    list->current = list->head->next;
-    list->current = data;
+    if (list->head != NULL)
+    {
+        if (list->head->next == NULL)
+        {
+            list->current->prev = list->head->next;
+            list->current->next = NULL;
+        }
+        else
+        {
+            list->head->next = list->current->prev;
+            list->current->next = list->current->next->prev;
+        }
+    }
+    else
+    {
+        list->current = list->head;
+        list->current->next = NULL;
+    }
 }
 
 void * popFront(List * list) {
