@@ -112,11 +112,12 @@ void pushCurrent(List * list, void * data)
             list->head->next = list->current->prev;
             list->current->next = NULL;
         }
-        /*else
+        else
         {
             list->head->next = list->current->prev;
             list->current->next = list->current->next->prev;
-        }*/
+            list->current->next->next = NULL;
+        }
     }
 }
 
