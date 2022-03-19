@@ -528,3 +528,13 @@ Sat Mar 19 12:47:12 -03 2022:
  tests:  11|1
 total_score: 55/70
 bcfd580
+Sat Mar 19 12:59:21 -03 2022: 
+ list.c | 29 +++++++++++++++++++++++------
+ 1 file changed, 23 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+./list.c:143:11: error: incompatible pointer types initializing 'List *' (aka 'struct List *') with an expression of type 'Node *' (aka 'struct Node *') [-Werror,-Wincompatible-pointer-types]
+    List *datoEliminado = list->current;
+          ^               ~~~~~~~~~~~~~
+1 error generated.
+Compilation failed
+596a4ca
