@@ -538,3 +538,16 @@ In file included from test.c:5:
 1 error generated.
 Compilation failed
 596a4ca
+Sat Mar 19 12:59:51 -03 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+./list.c:143:10: error: initializing 'List' (aka 'struct List') with an expression of incompatible type 'Node *' (aka 'struct Node *')
+    List datoEliminado = list->current;
+         ^               ~~~~~~~~~~~~~
+./list.c:159:12: error: returning 'List' (aka 'struct List') from a function with incompatible result type 'void *'
+    return datoEliminado;
+           ^~~~~~~~~~~~~
+2 errors generated.
+Compilation failed
+9360315

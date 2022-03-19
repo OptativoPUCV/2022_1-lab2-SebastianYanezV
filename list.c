@@ -140,7 +140,7 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) 
 {
-    List *datoEliminado = list->current;
+    List datoEliminado = list->current;
 
     if (list->current->prev != NULL)
     {
