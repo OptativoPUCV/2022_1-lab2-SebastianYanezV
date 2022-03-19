@@ -469,3 +469,9 @@ Sat Mar 19 01:25:10 -03 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 81a040c
+Sat Mar 19 01:28:09 -03 2022: 
+ list.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+ tests:  10|2
+total_score: 45/70
+fba1407
