@@ -512,3 +512,13 @@ In file included from test.c:5:
 2 errors generated.
 Compilation failed
 17025ae
+Sat Mar 19 12:46:46 -03 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+./list.c:154:1: error: non-void function does not return a value in all control paths [-Werror,-Wreturn-type]
+}
+^
+1 error generated.
+Compilation failed
+8d62f75
