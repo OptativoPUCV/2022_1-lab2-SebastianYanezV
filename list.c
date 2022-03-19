@@ -151,6 +151,7 @@ void * popCurrent(List * list)
             
         }
     }*/
+    return 0;
 }
 
 void cleanList(List * list) {
