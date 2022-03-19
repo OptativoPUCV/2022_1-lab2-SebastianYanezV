@@ -557,3 +557,9 @@ Sat Mar 19 13:00:35 -03 2022:
  tests:  11|1
 total_score: 55/70
 92cb08d
+Sat Mar 19 13:01:25 -03 2022: 
+ list.c | 14 +-------------
+ 1 file changed, 1 insertion(+), 13 deletions(-)
+ tests:  11|1
+total_score: 55/70
+0501ba8
