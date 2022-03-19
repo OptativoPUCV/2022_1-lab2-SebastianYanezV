@@ -499,3 +499,16 @@ Sat Mar 19 01:30:40 -03 2022:
  tests:  11|1
 total_score: 55/70
 6629ba3
+Sat Mar 19 12:46:32 -03 2022: 
+ list.c | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+./list.c:143:11: error: unused variable 'datoEliminado' [-Werror,-Wunused-variable]
+    List *datoEliminado;
+          ^
+./list.c:154:1: error: non-void function does not return a value in all control paths [-Werror,-Wreturn-type]
+}
+^
+2 errors generated.
+Compilation failed
+17025ae

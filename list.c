@@ -138,8 +138,19 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
-    return NULL;
+void * popCurrent(List * list) 
+{
+    List *datoEliminado;
+
+    if (list->head == NULL) return NULL;
+    /*else
+    {
+        if (list->current->next == NULL)
+        {
+            list->current->prev->next = NULL;
+            
+        }
+    }*/
 }
 
 void cleanList(List * list) {
